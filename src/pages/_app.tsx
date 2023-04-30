@@ -1,6 +1,21 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.scss";
+import type { AppProps } from "next/app";
+
+import { apiPlugin, storyblokInit } from "@storyblok/react";
+import { tradeGothic } from "@/styles/typography";
+import { MainLayout } from "@/components/layouts/MainLayout";
+
+storyblokInit({
+	accessToken: process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_TOKEN,
+	bridge: true,
+	use: [apiPlugin],
+	//components: components,
+});
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+	return (
+		<MainLayout>
+			<Component {...pageProps} />
+		</MainLayout>
+	);
 }

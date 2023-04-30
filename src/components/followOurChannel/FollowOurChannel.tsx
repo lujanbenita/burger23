@@ -1,0 +1,22 @@
+import { thirsty } from "@/styles/typography";
+import Image, { StaticImageData } from "next/image";
+import { FC } from "react";
+
+type FollowOurChannelProps = {
+	title: string;
+	icon: StaticImageData;
+	href: string;
+};
+
+export const FollowOurChannel: FC<FollowOurChannelProps> = ({ title, icon, href }) => {
+	return (
+		<section className="follow">
+			<h2 className={thirsty.className}>Follow our {title}</h2>
+			<span>
+				<a href={`${href}`}>
+					<Image src={icon} width={48} height={48} alt={`Icono de ${title}`} />
+				</a>
+			</span>
+		</section>
+	);
+};

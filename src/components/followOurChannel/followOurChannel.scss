@@ -1,0 +1,38 @@
+.follow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 40px 20px;
+	font-family: thirsty-soft;
+	box-sizing: border-box;
+
+	h2 {
+		font-size: 3rem;
+		font-weight: 300;
+	}
+
+	img {
+		width: 48px;
+		height: 48px;
+		margin-left: 25px;
+		fill: #ffffff;
+	}
+}
+
+@media only screen and (width <= 700px) {
+	.follow {
+		padding: 20px;
+
+		img {
+			width: 34px;
+			height: 34px;
+		}
+
+		h2 {
+			font-size: 2rem;
+			font-weight: 300;
+			text-align: center;
+		}
+	}
+}

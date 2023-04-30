@@ -1,0 +1,77 @@
+.burgers {
+	position: relative;
+
+	h3 {
+		position: absolute;
+		right: 0;
+		bottom: 40px;
+		left: 0;
+		z-index: 1;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	&__item {
+		position: relative;
+		float: left;
+		width: 25%;
+		height: min-content;
+		overflow: hidden;
+		line-height: 0;
+		cursor: pointer;
+		background: #000000;
+
+		&:hover {
+			&::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				z-index: 1;
+				display: block;
+				width: 25px;
+				height: 25px;
+				margin: auto;
+				background: url("https://images.prismic.io/carlostest/4a89ff0c-fe3b-4f4e-a766-bd737402292e_hover.png?auto=compress,format");
+			}
+
+			img {
+				transform: scale(1.01);
+			}
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			opacity: 0.5;
+		}
+
+		&:first-child {
+			width: 50%;
+			height: auto;
+
+			img {
+				height: 100%;
+			}
+
+			& h3::before {
+				content: "Burger del mes";
+				position: relative;
+				top: -35px;
+				display: block;
+				font-family: var(--font-thirsty);
+				font-size: 1.1rem;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+@media only screen and (width <= 700px) {
+	.burgers--item {
+		width: 100%;
+
+		&:first-child {
+			width: 100%;
+		}
+	}
+}
