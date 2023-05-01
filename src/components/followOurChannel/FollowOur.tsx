@@ -2,13 +2,13 @@ import { thirsty } from "@/styles/typography";
 import Image, { StaticImageData } from "next/image";
 import { FC } from "react";
 
-type FollowOurChannelProps = {
+type FollowOurProps = {
 	title: string;
 	icon: StaticImageData;
 	href: string;
 };
 
-export const FollowOurChannel: FC<FollowOurChannelProps> = ({ title, icon, href }) => {
+export const FollowOur: FC<FollowOurProps> = ({ title, icon, href }) => {
 	return (
 		<section className="follow">
 			<h2 className={thirsty.className}>Follow our {title}</h2>

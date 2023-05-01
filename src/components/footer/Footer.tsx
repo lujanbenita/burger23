@@ -83,7 +83,7 @@ export const Footer: FC = () => {
 					<a href="#">Politica de cookies.</a>
 				</span>
 				<span>
-					Desarrollado por <a href="clujan.eu">cluján</a>
+					Desarrollado por <a href="clujan.eu">Carlos Luján</a>
 				</span>
 			</div>
 		</footer>

@@ -2,7 +2,7 @@ import { ISbStoryData, getStoryblokApi } from "@storyblok/react";
 import { SectionMenuBurgers } from "@/components/sectionMenuBurgers/SectionMenuBurgers";
 import { SectionHeadBanner } from "@/components/sectionHeadBanner/SectionHeadBanner";
 import { BannerHome, Contact, Location, MobileApp, News, Work, YoutubeIcon } from "../../public/images";
-import { FollowOurChannel } from "@/components/followOurChannel/FollowOurChannel";
+import { FollowOur } from "@/components/followOurChannel/FollowOur";
 import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareDual } from "@/components/sectionSquares/SquareDual";
 import { SquareTrial } from "@/components/sectionSquares/SquareTrial";
@@ -18,7 +18,7 @@ export default function Home({ burgers }: BurgersType) {
 
 			<SectionMenuBurgers burgers={burgers} />
 
-			<FollowOurChannel title="channel" icon={YoutubeIcon} href="#" />
+			<FollowOur title="channel" icon={YoutubeIcon} href="#" />
 
 			<SectionSquares>
 				<SquareDual title="¿QUIERES UNIRTE A NUESTRA FAMILIA?" image={Work} href="#" titleHref="Enviar solicitud" />
