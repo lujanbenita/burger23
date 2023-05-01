@@ -2,8 +2,32 @@
 	/* Colors */
 	--main-color: #000000;
 	--text-color: #313131;
-	--orange: #EA552B;
-	--green: #4CA96D;
-	--background-color: #F0F0F0;
-	--links-color: #F97316;
+	--orange: #ea552b;
+	--green: #4ca96d;
+	--background-color: #f0f0f0;
+	--links-color: #f97316;
+	--mobile: (width < 600px);
+}
+
+/*  Breakpoint */
+$mobile: 600px;
+$tablet: 900px;
+$desktop: 1200px;
+
+@mixin sm {
+	@media (max-width: #{$mobile}) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media (max-width: #{$tablet}) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media (max-width: #{$desktop}) {
+		@content;
+	}
 }
