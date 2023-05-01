@@ -6,6 +6,7 @@ import { FollowOur } from "@/components/followOurChannel/FollowOur";
 import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareDual } from "@/components/sectionSquares/SquareDual";
 import { SquareTrial } from "@/components/sectionSquares/SquareTrial";
+import { RRSS } from "@/core/routes";
 
 type BurgersType = {
 	burgers: ISbStoryData[];
@@ -18,7 +19,7 @@ export default function Home({ burgers }: BurgersType) {
 
 			<SectionMenuBurgers burgers={burgers} />
 
-			<FollowOur title="channel" icon={YoutubeIcon} href="#" />
+			<FollowOur title="channel" icon={YoutubeIcon} href={RRSS.youtube} />
 
 			<SectionSquares>
 				<SquareDual title="¿QUIERES UNIRTE A NUESTRA FAMILIA?" image={Work} href="#" titleHref="Enviar solicitud" />
