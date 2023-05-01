@@ -1,5 +1,9 @@
 .section-squares {
 	display: flex;
+
+	@include sm {
+		display: block;
+	}
 }
 
 .square-dual {
@@ -56,6 +60,19 @@
 	position: relative;
 	width: 33.333%;
 	overflow: hidden;
+
+	@include lg {
+		max-height: 600px;
+	}
+
+	@include md {
+		max-height: 480px;
+	}
+
+	@include sm {
+		width: 100%;
+		max-height: 400px;
+	}
 
 	&:hover img {
 		transform: scale(1.01);

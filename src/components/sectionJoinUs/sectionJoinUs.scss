@@ -7,6 +7,10 @@
 	&__img {
 		width: 50%;
 
+		@include md {
+			width: 100%;
+		}
+
 		img {
 			width: 100%;
 			max-height: 700px;
@@ -18,6 +22,14 @@
 		width: 50%;
 		padding: 40px;
 		box-sizing: border-box;
+
+		@include md {
+			width: 100%;
+
+			img {
+				height: 400px;
+			}
+		}
 
 		h2 {
 			position: relative;

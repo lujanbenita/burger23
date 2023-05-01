@@ -8,6 +8,14 @@
 		padding: 40px;
 		box-sizing: border-box;
 
+		@include md {
+			width: 100%;
+		}
+
+		@include sm {
+			padding: 10px;
+		}
+
 		h2 {
 			position: relative;
 			top: 6%;
@@ -40,36 +48,24 @@
 		text-align: center;
 		box-sizing: border-box;
 
+		@include md {
+			width: 100%;
+			padding: 0 60px;
+		}
+
+		@include sm {
+			padding: 0;
+		}
+
 		img {
 			width: 100%;
 			height: auto;
 			max-width: 600px;
+
+			@include md {
+				object-fit: cover;
+				height: 400px;
+			}
 		}
-	}
-}
-
-@media only screen and (width <= 1100px) {
-	.history-content {
-		width: 100%;
-	}
-
-	.history-img {
-		width: 100%;
-		padding: 0 60px;
-
-		img {
-			object-fit: cover;
-			height: 400px;
-		}
-	}
-}
-
-@media only screen and (width <= 700px) {
-	.history-content {
-		padding: 10px;
-	}
-
-	.history-img {
-		padding: 0;
 	}
 }
