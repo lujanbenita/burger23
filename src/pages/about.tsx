@@ -6,6 +6,7 @@ import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareTrial } from "@/components/sectionSquares/SquareTrial";
 import { VimeoAboutUs } from "@/components/sectionVimeo/VimeoAboutUs";
 import { SectionHeadBanner } from "@/components/sectionHeadBanner/SectionHeadBanner";
+import { RRSS } from "@/core/routes";
 
 export default function About() {
 	return (
@@ -18,7 +19,7 @@ export default function About() {
 
 			<SectionJoinUs />
 
-			<FollowOur title="music" icon={SpotifyIcon} href="https://open.spotify.com/" />
+			<FollowOur title="music" icon={SpotifyIcon} href={RRSS.spotify} />
 
 			<SectionSquares>
 				<SquareTrial title="Location" image={Location} href="/location" />

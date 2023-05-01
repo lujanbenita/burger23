@@ -13,7 +13,7 @@ export const FollowOur: FC<FollowOurProps> = ({ title, icon, href }) => {
 		<section className="follow">
 			<h2 className={thirsty.className}>Follow our {title}</h2>
 			<span>
-				<a href={`${href}`}>
+				<a href={href} target="_blank">
 					<Image src={icon} width={48} height={48} alt={`Icono de ${title}`} />
 				</a>
 			</span>
