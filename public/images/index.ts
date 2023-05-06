@@ -2,6 +2,7 @@
 export { default as BannerHome } from "./banners/burgers.jpg";
 export { default as BannerAbout } from "./banners/about.jpg";
 export { default as BannerLocation } from "./banners/location.jpg";
+export { default as BannerContact } from "./banners/contact.jpg";
 
 // icons
 export { default as FacebookIcon } from "./icons/facebook.png";
