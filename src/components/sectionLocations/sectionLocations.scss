@@ -1,0 +1,70 @@
+.locations {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1400px;
+	margin: 90px auto;
+}
+
+.location {
+	&__item {
+		display: flex;
+		width: 50%;
+		padding: 20px;
+		box-sizing: border-box;
+
+		@include md {
+			min-height: 250px;
+		}
+
+		@include sm {
+			width: 100%;
+			padding: 10px;
+		}
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__img {
+		width: 45%;
+
+		@include sm {
+			width: 50%;
+		}
+	}
+
+	&__content {
+		padding: 20px 20px 20px 60px;
+		box-sizing: border-box;
+
+		@include md {
+			padding: 20px 20px 20px 40px;
+		}
+
+		@include sm {
+			padding: 10px;
+		}
+
+		p {
+			display: block;
+			margin-block-start: 12px;
+			margin-block-end: 12px;
+		}
+
+		.hr {
+			position: relative;
+			left: -20px;
+			width: 80px;
+			height: 4px;
+			margin: 25px auto 35px 0;
+			text-align: left;
+			background: #ffffff;
+
+			@include sm {
+				left: 0;
+			}
+		}
+	}
+}

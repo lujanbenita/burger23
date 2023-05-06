@@ -26,7 +26,12 @@
 		}
 	}
 
-	& &__item:hover img {
+	button:hover {
+		background: #ffffff;
+		transition: 0.3s;
+	}
+
+	&__item:hover img {
 		transform: scale(1.01);
 	}
 
