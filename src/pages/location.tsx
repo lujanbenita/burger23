@@ -1,17 +1,6 @@
 import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareTrial } from "@/components/sectionSquares/SquareTrial";
-import {
-	BannerLocation,
-	Burgers,
-	MobileApp,
-	News,
-	Slider1,
-	Slider2,
-	Slider3,
-	Slider4,
-	Slider5,
-	Work,
-} from "../../public/images";
+import { About, BannerLocation, Burgers, MobileApp, News, Work } from "../../public/images";
 import { MAIN_ROUTES } from "@/core/routes";
 import { SquareDual } from "@/components/sectionSquares/SquareDual";
 import { SectionHeadBanner } from "@/components/sectionHeadBanner/SectionHeadBanner";
@@ -39,7 +28,7 @@ export default function location({ locations }: LocationsType) {
 			<SectionSquares>
 				<SquareTrial title="NEWS" image={News} href={MAIN_ROUTES.news} />
 				<SquareTrial title="HOME" image={Burgers} href={MAIN_ROUTES.home} />
-				<SquareTrial title="ABOUT" image={Burgers} href={MAIN_ROUTES.about} />
+				<SquareTrial title="ABOUT" image={About} href={MAIN_ROUTES.about} />
 			</SectionSquares>
 		</>
 	);

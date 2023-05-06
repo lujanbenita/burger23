@@ -2,31 +2,6 @@ footer {
 	padding: 75px 20px 5px;
 }
 
-.rrss {
-	display: flex;
-	justify-content: center;
-
-	&__container {
-		display: flex;
-	}
-
-	&__item {
-		margin: 0 12px;
-	}
-
-	svg {
-		width: 25px;
-		height: auto;
-		fill: white;
-		transition: 0.3s;
-
-		&:hover {
-			fill: #7a7a7a;
-			transition: 0.3s;
-		}
-	}
-}
-
 .footer--nav {
 	margin: 50px;
 
