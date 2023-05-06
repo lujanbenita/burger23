@@ -3,8 +3,9 @@ import { FacebookIcon, InstagramIcon, SpotifyIcon, TwitterIcon, YoutubeIcon } fr
 import Link from "next/link";
 import Image from "next/image";
 import { MAIN_ROUTES, RRSS } from "@/core/routes";
+import { MENU_NAV } from "@/core/lists";
 
-const year = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 
 export const Footer: FC = () => {
 	return (
@@ -43,39 +44,39 @@ export const Footer: FC = () => {
 			<nav className="footer--nav">
 				<ul>
 					<li>
-						<Link href={MAIN_ROUTES.about} legacyBehavior>
-							<a className="hover-effect">ABOUT</a>
+						<Link href={MAIN_ROUTES.about} className="hover-effect">
+							ABOUT
 						</Link>
 					</li>{" "}
 					/
 					<li>
-						<Link href={MAIN_ROUTES.location} legacyBehavior>
-							<a className="hover-effect">LOCATION</a>
+						<Link href={MAIN_ROUTES.location} className="hover-effect">
+							LOCATION
 						</Link>
 					</li>{" "}
 					/
 					<li>
-						<Link href={MAIN_ROUTES.home}>
-							<a className="hover-effect">BURGER TOWN</a>
+						<Link href={MAIN_ROUTES.home} className="hover-effect">
+							BURGER TOWN
 						</Link>
 					</li>{" "}
 					/
 					<li>
-						<Link href={MAIN_ROUTES.contact} legacyBehavior>
-							<a className="hover-effect">CONTACT</a>
+						<Link href={MAIN_ROUTES.contact} className="hover-effect">
+							CONTACT
 						</Link>
 					</li>{" "}
 					/
 					<li>
-						<Link href={MAIN_ROUTES.news} legacyBehavior>
-							<a className="hover-effect">NEWS</a>
+						<Link href={MAIN_ROUTES.news} className="hover-effect">
+							NEWS
 						</Link>
 					</li>
 				</ul>
 			</nav>
 
 			<div className="footer--info">
-				<span>@Burger Town {year}. </span>
+				<span>@Burger Town {currentYear}. </span>
 				<span>Todos los derechos reservados.</span>
 				<span>
 					<a href="#">Aviso legal</a>.

@@ -1,0 +1,27 @@
+.carousel {
+	position: relative;
+
+	img {
+		object-fit: cover;
+	}
+
+	.slider > div:first-child button {
+		transform: rotate(180deg);
+	}
+
+	.slider > div:last-child button {
+		right: 0;
+	}
+
+	button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 40px;
+		padding: 19px;
+		margin: auto;
+		background: url("https://cdn.dsmcdn.com/web/production/slick-arrow.svg") 50% no-repeat;
+		border: 0;
+		border-radius: 50%;
+	}
+}
