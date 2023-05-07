@@ -19,7 +19,7 @@ export const SectionContactForm: FC = () => {
 				<form>
 					<input type="text" placeholder="Nombre" />
 					<input type="email" placeholder="Email" />
-					<textarea rows="12" placeholder="Cuentanos"></textarea>
+					<textarea rows={12} placeholder="Cuentanos"></textarea>
 				</form>
 				<button>ENVIAR MENSAJE</button>
 			</div>

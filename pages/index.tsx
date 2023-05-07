@@ -1,7 +1,7 @@
 import { ISbStoryData, getStoryblokApi } from "@storyblok/react";
 import { SectionMenuBurgers } from "@/components/sectionMenuBurgers/SectionMenuBurgers";
 import { SectionHeadBanner } from "@/components/sectionHeadBanner/SectionHeadBanner";
-import { BannerHome, Contact, Location, MobileApp, News, Work, YoutubeIcon } from "../../public/images";
+import { BannerHome, Contact, Location, MobileApp, News, Work, YoutubeIcon } from "../public/images";
 import { FollowOur } from "@/components/followOurChannel/FollowOur";
 import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareDual } from "@/components/sectionSquares/SquareDual";

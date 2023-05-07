@@ -12,27 +12,27 @@ export const Rrss: FC = () => {
 			<div className="rrss__logo"></div>
 			<div className="rrss__container">
 				<div className="rrss__item">
-					<a href={RRSS.youtube} target="_blank">
+					<a href={RRSS.youtube} target="_blank" rel="noreferrer">
 						<Youtube />
 					</a>
 				</div>
 				<div className="rrss__item">
-					<a href={RRSS.facebook} target="_blank">
+					<a href={RRSS.facebook} target="_blank" rel="noreferrer">
 						<Facebook />
 					</a>
 				</div>
 				<div className="rrss__item">
-					<a href={RRSS.spotify} target="_blank">
+					<a href={RRSS.spotify} target="_blank" rel="noreferrer">
 						<Spotify />
 					</a>
 				</div>
 				<div className="rrss__item">
-					<a href={RRSS.twitter} target="_blank">
+					<a href={RRSS.twitter} target="_blank" rel="noreferrer">
 						<Twitter />
 					</a>
 				</div>
 				<div className="rrss__item">
-					<a href={RRSS.instagram} target="_blank">
+					<a href={RRSS.instagram} target="_blank" rel="noreferrer">
 						<Instagram />
 					</a>
 				</div>

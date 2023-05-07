@@ -1,12 +1,12 @@
 import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareTrial } from "@/components/sectionSquares/SquareTrial";
-import { BannerContact, Burgers, Location, News, TwitterIcon } from "../../public/images";
+import { BannerContact, Burgers, Location, News, TwitterIcon } from "../public/images";
 import { MAIN_ROUTES, RRSS } from "@/core/routes";
 import { SectionHeadBanner } from "@/components/sectionHeadBanner/SectionHeadBanner";
 import { SectionContactForm } from "@/components/sectionContactForm/SectionContactForm";
 import { FollowOur } from "@/components/followOurChannel/FollowOur";
 
-export default function () {
+export default function Contact() {
 	return (
 		<>
 			<SectionHeadBanner title="Contact" image={BannerContact} />
