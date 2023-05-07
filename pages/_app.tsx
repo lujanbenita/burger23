@@ -2,7 +2,6 @@ import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 
 import { apiPlugin, storyblokInit } from "@storyblok/react";
-import { tradeGothic } from "@/styles/typography";
 import { MainLayout } from "@/components/layouts/MainLayout";
 
 storyblokInit({

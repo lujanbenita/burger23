@@ -1,6 +1,6 @@
 import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareTrial } from "@/components/sectionSquares/SquareTrial";
-import { About, BannerLocation, Burgers, MobileApp, News, Work } from "../../public/images";
+import { About, BannerLocation, Burgers, MobileApp, News, Work } from "../public/images";
 import { MAIN_ROUTES } from "@/core/routes";
 import { SquareDual } from "@/components/sectionSquares/SquareDual";
 import { SectionHeadBanner } from "@/components/sectionHeadBanner/SectionHeadBanner";

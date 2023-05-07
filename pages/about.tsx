@@ -1,7 +1,7 @@
 import { FollowOur } from "@/components/followOurChannel/FollowOur";
 import { SectionHistory } from "@/components/sectionHistory/SectionHistory";
 import { SectionJoinUs } from "@/components/sectionJoinUs/SectionJoinUs";
-import { BannerAbout, Burgers, Location, News, SpotifyIcon } from "../../public/images";
+import { BannerAbout, Burgers, Location, News, SpotifyIcon } from "../public/images";
 import { SectionSquares } from "@/components/sectionSquares/SectionSquares";
 import { SquareTrial } from "@/components/sectionSquares/SquareTrial";
 import { VimeoAboutUs } from "@/components/sectionVimeo/VimeoAboutUs";

@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import { Footer } from "../footer/Footer";
 import Head from "next/head";
-import { tradeGothic } from "@/styles/typography";
+//import { tradeGothic } from "@/styles/typography";
 
 type Props = {
 	children: ReactNode;
@@ -16,7 +16,7 @@ export const MainLayout: FC<Props> = ({ children }) => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className={tradeGothic.className}>
+			<main>
 				{children}
 				<Footer />
 			</main>
